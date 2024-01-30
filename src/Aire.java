@@ -50,6 +50,11 @@ public class Aire {
             this.temp--;
         }
     }
+    //    public void dismunuirTemp() {
+    //        if (!(this.temp - 1 < this.tempMin)) {
+    //            this.temp--;
+    //        }
+    //    }
     @Override
     public String toString() {
         return getNombre() + " - " + getTemp();
