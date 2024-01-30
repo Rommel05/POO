@@ -2,10 +2,10 @@ import java.util.List;
 
 public class LIbro {
     private String titulo;
-    private String autor;
+    private Autor autor;
     private List<Tema> temas;
 
-    public LIbro(String titulo, String autor, List<Tema> temas) {
+    public LIbro(String titulo, Autor autor, List<Tema> temas) {
         this.titulo = titulo;
         this.autor = autor;
         this.temas = temas;
@@ -19,11 +19,11 @@ public class LIbro {
         this.titulo = titulo;
     }
 
-    public String getAutor() {
+    public Autor getAutor() {
         return autor;
     }
 
-    public void setAutor(String autor) {
+    public void setAutor(Autor autor) {
         this.autor = autor;
     }
 

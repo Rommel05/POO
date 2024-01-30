@@ -7,7 +7,7 @@ public class MainLibro {
         Tema t = new Tema("Fantasia");
         List<Tema> l = new ArrayList<>();
         l.add(t);
-        LIbro j = new LIbro("Harry Potter y la Piedra Filosofal","J. K. Rowling",l);
+        LIbro j = new LIbro("Harry Potter y la Piedra Filosofal",a,l);
         System.out.println(j);
     }
 }
