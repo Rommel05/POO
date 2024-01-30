@@ -1,9 +1,9 @@
-public class aire {
+public class Aire {
     private String nombre;
     private int temp;
     private int tempMax;
     private int tempMin;
-    public aire(String nombre, int temp, int tempMax, int tempMin) {
+    public Aire(String nombre, int temp, int tempMax, int tempMin) {
         this.nombre = nombre;
         this.temp = temp;
         this.tempMax = tempMax;

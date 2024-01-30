@@ -1,18 +1,18 @@
-public class Ordenadores {
+public class Ordenador {
     private double precio;
     private String marca;
     private String modelo;
-    public Ordenadores(double precio, String marca, String modelo) {
+    public Ordenador(double precio, String marca, String modelo) {
         this.precio = precio;
         this.marca = marca;
         this.modelo = modelo;
     }
-    public Ordenadores(double precio, String marca) {
+    public Ordenador(double precio, String marca) {
         this.precio = precio;
         this.marca = marca;
         this.modelo = "";
     }
-    public Ordenadores(double precio) {
+    public Ordenador(double precio) {
         this.precio = precio;
         this.marca = "MSI";
         this.modelo = "Pluse GL79";
