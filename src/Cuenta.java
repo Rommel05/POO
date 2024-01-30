@@ -34,6 +34,8 @@ public class Cuenta {
     public void ingrear(double cantidad) {
         if (cantidad > 0) {
             this.cantidad = this.cantidad + cantidad;
+        } else {
+            throw new IllegalArgumentException("La cantidad a ingresar no puede ser negativa");
         }
     }
     public void retirar(double cantidad) {
