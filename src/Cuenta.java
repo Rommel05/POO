@@ -32,7 +32,7 @@ public class Cuenta {
         return getTitular() + " - " + getCantidad();
     }
     public void ingrear(double cantidad) {
-        if (this.cantidad + cantidad > 0) {
+        if (cantidad > 0) {
             this.cantidad = this.cantidad + cantidad;
         }
     }
