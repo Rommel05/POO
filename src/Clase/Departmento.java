@@ -8,14 +8,26 @@ public class Departmento {
     private String nombre;
     private AConocimiento area;
     private Set<Catedra> catedras;
+    private Set<Professor> professores;
 
     public Departmento(int numDep, String nombre, AConocimiento area) {
         this.numDep = numDep;
         this.nombre = nombre;
         this.area = area;
         this.catedras = new HashSet<>();
+        this.professores = new HashSet<>();
     }
 
+    public Set<Professor> getProfessores() {
+        return professores;
+    }
+
+    public void setProfessores(Set<Professor> professores) {
+        this.professores = professores;
+    }
+    public void addProfesores(Professor profe) {
+        this.professores.add(profe);
+    }
     public Set<Catedra> getCatedras() {
         return catedras;
     }

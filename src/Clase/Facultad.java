@@ -40,4 +40,9 @@ public class Facultad {
     public void addCatedras(Catedra catedra) {
         this.catedras.add(catedra);
     }
+
+    @Override
+    public String toString() {
+        return this.numfacultad + " - " + this.nombre;
+    }
 }
