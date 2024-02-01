@@ -4,11 +4,21 @@ public class Prestamo {
     private int nPres;
     private int cantidad;
     private Sucursal sucursal;
+    private Cliente cliente;
 
-    public Prestamo(int nPres, int cantidad, Sucursal sucursal) {
+    public Prestamo(int nPres, int cantidad, Sucursal sucursal, Cliente cliente) {
         this.nPres = nPres;
         this.cantidad = cantidad;
         this.sucursal = sucursal;
+        this.cliente = cliente;
+    }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
     }
 
     public int getnPres() {
@@ -37,6 +47,6 @@ public class Prestamo {
 
     @Override
     public String toString() {
-        return getCantidad() + "";
+        return this.nPres + " - " + this.cantidad;
     }
 }
