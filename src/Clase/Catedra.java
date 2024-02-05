@@ -7,24 +7,24 @@ public class Catedra {
     private String nombre;
     private Departmento dep;
     private Facultad facultad;
-    private Set<Professor> professores;
+    private Set<Adscrito> adscritos;
 
     public Catedra(String nombre, Departmento dep, Facultad facultad) {
         this.nombre = nombre;
         this.dep = dep;
         this.facultad = facultad;
-        this.professores = new HashSet<>();
+        this.adscritos = new HashSet<>();
     }
 
-    public Set<Professor> getProfessores() {
-        return professores;
+    public Set<Adscrito> getAdscritos() {
+        return adscritos;
     }
 
-    public void setProfessores(Set<Professor> professores) {
-        this.professores = professores;
+    public void setAdscritos(Set<Adscrito> adscritos) {
+        this.adscritos = adscritos;
     }
-    public void addProfe(Professor profe) {
-        this.professores.add(profe);
+    public void addAdscritos(Adscrito adscrito) {
+        this.adscritos.add(adscrito);
     }
     public Facultad getFacultad() {
         return facultad;
