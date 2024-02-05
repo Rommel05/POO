@@ -6,23 +6,23 @@ import java.util.Set;
 public class Professor {
     private int numProf;
     private Departmento dep;
-    private Set<Catedra> catedras;
+    private Set<Adscrito> adscritos;
 
     public Professor(int numProf, Departmento dep) {
         this.numProf = numProf;
         this.dep = dep;
-        this.catedras = new HashSet<>();
+        this.adscritos = new HashSet<>();
     }
 
-    public Set<Catedra> getCatedras() {
-        return catedras;
+    public Set<Adscrito> getAdscritos() {
+        return adscritos;
     }
 
-    public void setCatedras(Set<Catedra> catedras) {
-        this.catedras = catedras;
+    public void setAdscritos(Set<Adscrito> adscritos) {
+        this.adscritos = adscritos;
     }
-    public void addCatedras(Catedra catedra) {
-        this.catedras.add(catedra);
+    public void addAdscritos(Adscrito adscrito) {
+        this.adscritos.add(adscrito);
     }
 
     public int getNumProf() {
