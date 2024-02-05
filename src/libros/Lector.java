@@ -6,12 +6,12 @@ import java.util.Set;
 public class Lector {
     private String nombre;
     private String dni;
-    private Set<Ejemplar> ejemplares;
+    private Set<Historico> historicos;
 
     public Lector(String nombre, String dni) {
         this.nombre = nombre;
         this.dni = dni;
-        this.ejemplares = new HashSet<>();
+        this.historicos = new HashSet<>();
     }
 
     public String getNombre() {
@@ -30,15 +30,15 @@ public class Lector {
         this.dni = dni;
     }
 
-    public Set<Ejemplar> getEjemplares() {
-        return ejemplares;
+    public Set<Historico> getHistoricos() {
+        return historicos;
     }
 
-    public void setEjemplares(Set<Ejemplar> ejemplares) {
-        this.ejemplares = ejemplares;
+    public void setHistoricos(Set<Historico> historicos) {
+        this.historicos = historicos;
     }
-    public void addEjemplares(Ejemplar ejemplar) {
-        this.ejemplares.add(ejemplar);
+    public void addhistoricos(Historico historico) {
+        this.historicos.add(historico);
     }
 
     @Override

@@ -7,13 +7,13 @@ public class Ejemplar {
     private String nombre;
     private int n_reg;
     private Libro libro;
-    private Set<Lector> lectores;
+    private Set<Historico> historicos;
 
     public Ejemplar(String nombre, int n_reg, Libro libro) {
         this.nombre = nombre;
         this.n_reg = n_reg;
         this.libro = libro;
-        this.lectores = new HashSet<>();
+        this.historicos = new HashSet<>();
     }
 
     public String getNombre() {
@@ -40,15 +40,15 @@ public class Ejemplar {
         this.libro = libro;
     }
 
-    public Set<Lector> getLectores() {
-        return lectores;
+    public Set<Historico> getHistoricos() {
+        return historicos;
     }
 
-    public void setLectores(Set<Lector> lectores) {
-        this.lectores = lectores;
+    public void setHistoricos(Set<Historico> historicos) {
+        this.historicos = historicos;
     }
-    public void addLectores(Lector lector) {
-        this.lectores.add(lector);
+    public void addHistoricos(Historico historico) {
+        this.historicos.add(historico);
     }
 
     @Override
