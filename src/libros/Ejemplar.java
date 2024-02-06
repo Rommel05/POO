@@ -8,12 +8,22 @@ public class Ejemplar {
     private int n_reg;
     private Libro libro;
     private Set<Historico> historicos;
+    private Lector lector;
 
-    public Ejemplar(String nombre, int n_reg, Libro libro) {
+    public Ejemplar(String nombre, int n_reg, Libro libro, Lector lector) {
         this.nombre = nombre;
         this.n_reg = n_reg;
         this.libro = libro;
         this.historicos = new HashSet<>();
+        this.lector = lector;
+    }
+
+    public Lector getLector() {
+        return lector;
+    }
+
+    public void setLector(Lector lector) {
+        this.lector = lector;
     }
 
     public String getNombre() {

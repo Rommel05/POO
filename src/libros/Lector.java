@@ -7,11 +7,24 @@ public class Lector {
     private String nombre;
     private String dni;
     private Set<Historico> historicos;
+    private Set<Prestamo> prestamos;
 
     public Lector(String nombre, String dni) {
         this.nombre = nombre;
         this.dni = dni;
         this.historicos = new HashSet<>();
+        this.prestamos = new HashSet<>();
+    }
+
+    public Set<Prestamo> getPrestamos() {
+        return prestamos;
+    }
+
+    public void setPrestamos(Set<Prestamo> prestamos) {
+        this.prestamos = prestamos;
+    }
+    public void addPrestamo(Prestamo prestamo) {
+        this.prestamos.add(prestamo);
     }
 
     public String getNombre() {
