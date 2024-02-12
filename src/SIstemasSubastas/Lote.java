@@ -73,7 +73,6 @@ public class Lote {
         Puja pujaMax = null;
         double max = 0;
         for (Puja puja : this.getPujas()) {
-            if (puja.)
         }
     }
 
