@@ -5,12 +5,15 @@ import java.util.Set;
 
 public class Lote {
     private String nombre;
+
+    private String cod;
     private Subastas subasta;
 
     private Set<Articulo> articulos;
 
-    public Lote(String nombre, Subastas subasta) {
+    public Lote(String nombre, String cod,Subastas subasta) {
         this.nombre = nombre;
+        this.cod = cod;
         this.subasta = subasta;
         this.articulos = new HashSet<>();
     }
@@ -21,6 +24,14 @@ public class Lote {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public String getCod() {
+        return cod;
+    }
+
+    public void setCod(String cod) {
+        this.cod = cod;
     }
 
     public Subastas getSubasta() {
@@ -45,6 +56,11 @@ public class Lote {
 
     public double getPrecioSalida() {
         return this.getArticulos().stream().map(Articulo::getPrecio).mapToDouble(Double::valueOf).sum();
+    }
+
+    public Lote (String cod) {
+        this.cod = cod;
+        this.articulos = new HashSet<>();
     }
 
     @Override
