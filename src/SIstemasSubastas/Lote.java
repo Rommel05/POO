@@ -47,7 +47,6 @@ public class Lote {
         return this.getArticulos().stream().map(Articulo::getPrecio).mapToDouble(Double::valueOf).sum();
     }
 
-
     @Override
     public String toString() {
         return this.nombre;
