@@ -11,11 +11,14 @@ public class Lote {
 
     private Set<Articulo> articulos;
 
+    private Set<Puja> pujas;
+
     public Lote(String nombre, String cod,Subastas subasta) {
         this.nombre = nombre;
         this.cod = cod;
         this.subasta = subasta;
         this.articulos = new HashSet<>();
+        this.pujas = new HashSet<>();
     }
 
     public String getNombre() {
@@ -54,13 +57,24 @@ public class Lote {
         this.articulos.add(articulo);
     }
 
+    public Set<Puja> getPujas() {
+        return pujas;
+    }
+
+    public void setPujas(Set<Puja> pujas) {
+        this.pujas = pujas;
+    }
+
     public double getPrecioSalida() {
         return this.getArticulos().stream().map(Articulo::getPrecio).mapToDouble(Double::valueOf).sum();
     }
 
-    public Lote (String cod) {
-        this.cod = cod;
-        this.articulos = new HashSet<>();
+    public Puja pujaMAx() {
+        Puja pujaMax = null;
+        double max = 0;
+        for (Puja puja : this.getPujas()) {
+            if (puja.)
+        }
     }
 
     @Override

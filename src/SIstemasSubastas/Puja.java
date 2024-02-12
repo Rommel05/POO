@@ -7,10 +7,13 @@ public class Puja {
 
     private Subastas subasta;
 
-    public Puja(double cantidad, Pujador pujador, Subastas subasta) {
+    private Lote lote;
+
+    public Puja(double cantidad, Pujador pujador, Subastas subasta, Lote lote) {
         this.cantidad = cantidad;
         this.pujador = pujador;
         this.subasta = subasta;
+        this.lote = lote;
     }
 
     public double getCantidad() {
@@ -35,6 +38,14 @@ public class Puja {
 
     public void setSubasta(Subastas subasta) {
         this.subasta = subasta;
+    }
+
+    public Lote getLote() {
+        return lote;
+    }
+
+    public void setLote(Lote lote) {
+        this.lote = lote;
     }
 
     @Override
