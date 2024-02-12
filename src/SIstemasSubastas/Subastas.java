@@ -7,9 +7,12 @@ public class Subastas {
     private String dia;
     private Set<Lote> lotes;
 
+    private Set<Puja> pujas;
+
     public Subastas(String dia) {
         this.dia = dia;
         this.lotes = new HashSet<>();
+        this.pujas = new HashSet<>();
     }
 
     public String getDia() {
@@ -30,6 +33,18 @@ public class Subastas {
 
     public void addLotes(Lote lote) {
         this.lotes.add(lote);
+    }
+
+    public Set<Puja> getPujas() {
+        return pujas;
+    }
+
+    public void setPujas(Set<Puja> pujas) {
+        this.pujas = pujas;
+    }
+
+    public void addPujas(Puja puja) {
+        this.pujas.add(puja);
     }
 
     @Override
