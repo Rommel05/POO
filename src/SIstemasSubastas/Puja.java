@@ -1,21 +1,21 @@
 package SIstemasSubastas;
 
 public class Puja {
-    private double cantidd;
+    private double cantidad;
+
     private Pujador pujador;
-    private Subastas subasta;
-    public Puja(double cantidd, Pujador pujador, Subastas subasta) {
-        this.cantidd = cantidd;
+
+    public Puja(double cantidad, Pujador pujador) {
+        this.cantidad = cantidad;
         this.pujador = pujador;
-        this.subasta = subasta;
     }
 
-    public double getCantidd() {
-        return cantidd;
+    public double getCantidad() {
+        return cantidad;
     }
 
-    public void setCantidd(double cantidd) {
-        this.cantidd = cantidd;
+    public void setCantidad(double cantidad) {
+        this.cantidad = cantidad;
     }
 
     public Pujador getPujador() {
@@ -24,18 +24,5 @@ public class Puja {
 
     public void setPujador(Pujador pujador) {
         this.pujador = pujador;
-    }
-
-    public Subastas getSubasta() {
-        return subasta;
-    }
-
-    public void setSubasta(Subastas subasta) {
-        this.subasta = subasta;
-    }
-
-    @Override
-    public String toString() {
-        return this.cantidd + "";
     }
 }

@@ -4,35 +4,36 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Subastas {
-    private int cod_subasta;
-    private Set<Puja> pujas;
+    private String dia;
+    private Set<Lote> lotes;
 
-    public Subastas(int cod_subasta) {
-        this.cod_subasta = cod_subasta;
-        this.pujas = new HashSet<>();
+    public Subastas(String dia) {
+        this.dia = dia;
+        this.lotes = new HashSet<>();
     }
 
-    public int getCod_subasta() {
-        return cod_subasta;
+    public String getDia() {
+        return dia;
     }
 
-    public void setCod_subasta(int cod_subasta) {
-        this.cod_subasta = cod_subasta;
+    public void setDia(String dia) {
+        this.dia = dia;
     }
 
-    public Set<Puja> getPujas() {
-        return pujas;
+    public Set<Lote> getLotes() {
+        return lotes;
     }
 
-    public void setPujas(Set<Puja> pujas) {
-        this.pujas = pujas;
+    public void setLotes(Set<Lote> lotes) {
+        this.lotes = lotes;
     }
-    public void addPujas(Puja puja) {
-        this.pujas.add(puja);
+
+    public void addLotes(Lote lote) {
+        this.lotes.add(lote);
     }
 
     @Override
     public String toString() {
-        return this.cod_subasta +  "";
+        return this.dia;
     }
 }
