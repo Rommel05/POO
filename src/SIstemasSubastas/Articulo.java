@@ -3,7 +3,6 @@ package SIstemasSubastas;
 public class Articulo {
     private String nombre;
     private int precio;
-
     private Lote lote;
 
     public Articulo(String nombre, int precio, Lote lote) {
