@@ -43,6 +43,9 @@ public class Lote {
         this.articulos.add(articulo);
     }
 
+    public double getPrecioSalida() {
+        return this.getArticulos().stream().map(Articulo::getPrecio).mapToDouble(Double::valueOf).sum();
+    }
 
 
     @Override
