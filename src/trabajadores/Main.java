@@ -2,9 +2,6 @@ package trabajadores;
 
 public class Main {
     public static void main(String[] args) {
-        Empleado e = new Empleado("Pepe");
-        System.out.println(e);
-        System.out.println();
         Operario o = new Operario("Juan");
         System.out.println(o);
         System.out.println();
