@@ -6,6 +6,9 @@ public class Humano1 extends Humano{
     }
 
     public void comunicarse() {
-        System.out.println("");
+        System.out.println("Me comunico mediante signos");
+    }
+    public void colorPelo() {
+        System.out.println("Mi color de pelo es rubio");
     }
 }

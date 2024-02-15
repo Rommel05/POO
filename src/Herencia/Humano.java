@@ -20,7 +20,7 @@ public class Humano {
     }
 
     public void comunicarse() {
-        System.out.println("Me comunico hsblando");
+        System.out.println("Me comunico hablando");
     }
 
     public void colorPelo() {
