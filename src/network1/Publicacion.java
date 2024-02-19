@@ -27,9 +27,11 @@ public abstract class Publicacion {
     public void setComentarios(Set<Comentario> comentarios) {
         this.comentarios = comentarios;
     }
-
+    private void like() {
+        this.likes++;
+    }
     @Override
     public String toString() {
-        return this.id + "" + this.likes + "" + this.marcaTemporal + this.usuario;
+        return this.id + " " + this.likes + " " + this.marcaTemporal + " " + this.usuario;
     }
 }
