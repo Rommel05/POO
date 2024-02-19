@@ -2,8 +2,8 @@ package network;
 
 public class Mensaje extends Publicacion{
     private String texto;
-    public Mensaje(String id, String autor, String texto) {
-        super(id, autor);
+    public Mensaje(String id, String autor, String texto, String marcaTemporal, int likes) {
+        super(id, autor, marcaTemporal, likes);
         this.texto = texto;
     }
 
