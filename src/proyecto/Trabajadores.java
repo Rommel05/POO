@@ -10,6 +10,7 @@ public abstract class Trabajadores {
     }
     public abstract void puesto();
     public abstract void salario();
+    public abstract void funcion();
 
     @Override
     public String toString() {

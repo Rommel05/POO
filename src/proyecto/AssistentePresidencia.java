@@ -24,7 +24,7 @@ public class AssistentePresidencia extends Trabajadores{
     public void puesto() {
         System.out.println("Soy assistente de presidencia");
     }
-
+    @Override
     public void funcion() {
         System.out.println("Mi funcion es ayudar en todo lo que necesite el presidente");
     }

@@ -31,4 +31,14 @@ public class Dueño extends Trabajadores{
         System.out.println("Mi salario es de 10.000 euros al mes");
 
     }
+
+    @Override
+    public void funcion() {
+        System.out.println("Me encargo que la empresa vaya por buen camino");
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }
