@@ -27,6 +27,9 @@ public abstract class Publicacion {
     public void setComentarios(Set<Comentario> comentarios) {
         this.comentarios = comentarios;
     }
+    public void addComent(Comentario com) {
+        this.comentarios.add(com);
+    }
     private void like() {
         this.likes++;
     }

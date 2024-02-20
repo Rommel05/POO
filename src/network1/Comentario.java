@@ -16,6 +16,6 @@ public class Comentario {
 
     @Override
     public String toString() {
-        return this.usuario + " " + this.texto;
+        return this.usuario + ": " + this.texto;
     }
 }

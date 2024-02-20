@@ -11,6 +11,6 @@ public class Foto extends Publicacion{
 
     @Override
     public String toString() {
-        return super.toString() + " " + this.imagen + "" + this.titulo;
+        return super.toString() + " " + this.imagen + " " + this.titulo;
     }
 }
