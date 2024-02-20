@@ -5,9 +5,22 @@ import java.util.Set;
 
 public class Dueño extends Trabajadores{
     private Set<AssistentePresidencia> asistentes;
+    private Set<Administrativos> administrativos;
     public Dueño(String nombre, String dni) {
         super(nombre, dni);
         this.asistentes = new HashSet<>();
+        this.administrativos = new HashSet<>();
+    }
+
+    public Set<Administrativos> getAdministrativos() {
+        return administrativos;
+    }
+
+    public void setAdministrativos(Set<Administrativos> administrativos) {
+        this.administrativos = administrativos;
+    }
+    public void addAdministrativos(Administrativos admin) {
+        this.administrativos.add(admin);
     }
 
     public Set<AssistentePresidencia> getAsistentes() {

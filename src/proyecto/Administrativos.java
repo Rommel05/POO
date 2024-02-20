@@ -1,8 +1,18 @@
 package proyecto;
 
 public class Administrativos extends Trabajadores{
-    public Administrativos(String nombre, String dni) {
+    private Dueño dueño;
+    public Administrativos(String nombre, String dni, Dueño dueño) {
         super(nombre, dni);
+        this.dueño = dueño;
+    }
+
+    public Dueño getDueño() {
+        return dueño;
+    }
+
+    public void setDueño(Dueño dueño) {
+        this.dueño = dueño;
     }
 
     @Override
