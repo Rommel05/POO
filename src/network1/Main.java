@@ -7,7 +7,8 @@ public class Main {
         Usuario ana = new Usuario("Ana");
         Texto t = new Texto(maria,"Esto es un texto");
         maria.addPublicacion(t);
-        Foto f = new Foto(pepe,"Flor.jpg","Flor");
+        Foto f = new Foto(maria,"Flor.jpg","Flor");
+        Foto f2 = new Foto(pepe,"Flor.jpg","Flor");
         maria.addPublicacion(f);
         pepe.addPublicacion(f);
         Comentario c = new Comentario(t,pepe,"Muy bueno");
